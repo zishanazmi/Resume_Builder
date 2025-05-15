@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Resume Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h2>Smart Resume Builder</h2>
+        </nav>
+        <section class="hero">
+            <div class="text-content">
+                <h1>Build Smarter, Apply Faster.</h1>
+                <p>Check your resume against ATS systems or compare it with job descriptions using AI-powered tools.</p>
+                <div class="buttons">
+                    <a href="http://localhost:8501/" target="_blank" class="btn primary">Check Resume ATS</a>
+                    <a href="http://localhost:8502/" target="_blank" class="btn secondary">Compare with Job Description</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="{{ url_for('static', filename='assets/resume.svg') }}" alt="Resume Illustration">
+            </div>
+        </section>
+    </div>
+
+    <!-- Add a simple animation library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
